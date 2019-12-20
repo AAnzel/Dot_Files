@@ -1,0 +1,54 @@
+conky.config = {
+	color0 = 'FFFFFF',
+	color2 = 'B22222',
+	color3 = '696969',
+	color4 = 'D3D3D3',
+	color5 = '6F6F6F',
+    alignment = 'top_left',
+    background = false,
+    border_width = 1,
+    cpu_avg_samples = 4,
+    default_color = 'white',
+    default_outline_color = 'white',
+    default_shade_color = 'white',
+    double_buffer = true,
+    draw_borders = false,
+    draw_graph_borders = true,
+    draw_outline = false,
+    draw_shades = false,
+    extra_newline = false,
+    font = 'Play:size=10',
+    gap_x = 60,
+    gap_y = 60,
+    minimum_height = 5,
+    minimum_width = 300,
+    net_avg_samples = 4,
+    no_buffers = true,
+    out_to_console = false,
+    out_to_ncurses = false,
+    out_to_stderr = false,
+    out_to_x = true,
+    own_window = true,
+    own_window_class = 'Conky',
+    own_window_type = 'desktop',
+    own_window_transparent = true,
+    own_window_argb_visual = true,
+    own_window_argb_value = 190,
+    own_window_hints = 'below',
+    show_graph_range = false,
+    show_graph_scale = false,
+    stippled_borders = 0,
+    update_interval = 1.0,
+    uppercase = false,
+    use_spacer = 'none',
+    use_xft = true,
+}
+
+conky.text = [[
+${color3}SYSTEM INFORMATION   ${hr 2}$color
+${color4}System: $color$nodename $machine
+${color4}Uptime: $color$uptime
+${color4}Kernel: $color$kernel${alignr}${color0}
+${color4}Battery: $color$battery
+${color2}${battery_bar}
+]]
