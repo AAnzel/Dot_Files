@@ -49,6 +49,8 @@ ${color3}SYSTEM INFORMATION   ${hr 2}$color
 ${color4}System: $color$nodename $machine
 ${color4}Uptime: $color$uptime
 ${color4}Kernel: $color$kernel${alignr}${color0}
+${color4}Entropy: $color${entropy_avail}/${entropy_poolsize}$tab[${entropy_perc}%] 
+${color5}${entropy_bar}
 ${color4}Battery: $color$battery
 ${color2}${battery_bar}
 
@@ -85,7 +87,7 @@ ${color2} ${top_mem name 1}${alignr}${top_mem pid 1}   ${top_mem cpu 1}%   ${top
  ${top_mem name 4}${alignr}${top_mem pid 4}   ${top_mem cpu 4}%   ${top_mem mem_res 4}
  ${top_mem name 5}${alignr}${top_mem pid 5}   ${top_mem cpu 5}%   ${top_mem mem_res 5}
 
-${color5}NETWORKING   ${hr 2}$color
+${color3}NETWORKING   ${hr 2}$color
 ${color4}Wireless:$color ${wireless_essid wlo1} (IP: ${addr wlo1})
 ${color4}Wirless quality:$color ${wireless_link_qual_perc wlo1}%   ${color2}${wireless_link_bar wlo1}
 ${color4}Down:$color ${downspeedf wlo1}KiB/s ${alignr}${color4}Up: $color${upspeedf wlo1}KiB/s
