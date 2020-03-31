@@ -95,7 +95,7 @@ ${color4}Total:$color ${totaldown wlo1} ${alignr}${color4}Total: $color${totalup
 ${color2}${downspeedgraph wlo1 35,150 ffffff ff0000} ${alignr}${upspeedgraph wlo1 35,150 ffffff ff0000}$color
 
 ${color3}FILE SYSTEM   ${hr 2}$color
-${color4}Disks 1 - Primary$color${alignr}${fs_used}/${fs_size}$tab[${fs_used_perc}%]
+${color4}Disks 1 - Primary$color${alignr}${fs_used}/${fs_size}$tab[${fs_used_perc}%] 
 ${color4}Reads: $color${diskio_read sda}/s${alignr}${color4}Writes: $color${diskio_write sda}/s
 ${color2}${diskiograph_read sda 35,150 ffffff ff0000 scale -t}$color${alignr}${color2}${diskiograph_write sda 35,150 ffffff ff0000 scale -t}$color
 
