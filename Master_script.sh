@@ -47,7 +47,7 @@ cd ..
 # 4.0: manual work
 echo
 echo "================= To do ================="
-echo "Add to .bashrc: neofetch --ascii_colors 1 8"
-echo "Add conky script to start-up programs"
-echo "Configure rclone"
+echo "1. Add to .bashrc: neofetch --ascii_colors 1 8"
+echo "2. Add conky script to start-up programs"
+echo "3. Configure rclone"
 
