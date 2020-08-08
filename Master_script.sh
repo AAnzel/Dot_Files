@@ -26,28 +26,32 @@ sudo apt update && sudo apt install -y vivaldi-stable
 
 # 2.0: copying configuration files
 sudo cp to_do_list.txt ~/Documents/
-sudo cp -r .conky_configs ~
+sudo cp -r .conky_configs ~/
 
 echo
-echo "================= Running neofetch so it can create config folder ================="
+echo "================= Configuring neofetch ================="
+# Running neofetch so it can create config folder
 neofetch
 
 sudo cp neofetch/config.conf ~/.config/neofetch/
+
+# Adding .bashrc entry
+
+echo -e '\n############# JA DODAJEM ZA NEOFETCH ##############\nneofetch --ascii_colors 1 8\n###################################################\n' >> ~/.bashrc
 
 
 # 3.0: changing theme
 echo
 echo "================= Changing theme ================="
 git clone https://github.com/AAnzel/Pop_OS_custom_theme
-cd Pop_OS_custom_theme
+cd Pop_OS_custom_theme/
 sudo sh pop-color-change.sh
-cd ..
+cd ../
 
 
 # 4.0: manual work
 echo
 echo "================= To do ================="
-echo "1. Add to .bashrc: neofetch --ascii_colors 1 8"
-echo "2. Add conky script to start-up programs"
-echo "3. Configure rclone"
+echo "1. Add conky script to start-up programs"
+echo "2. Configure rclone"
 
