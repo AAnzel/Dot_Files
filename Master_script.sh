@@ -46,6 +46,7 @@ echo "================= Changing theme ================="
 git clone https://github.com/AAnzel/Pop_OS_custom_theme
 cd Pop_OS_custom_theme/
 sudo sh pop-color-change.sh
+sudo sh pop-shell-ext-change.sh
 cd ../
 
 
