@@ -14,7 +14,7 @@ sudo apt full-upgrade
 # 1.0: installing all of the programs
 echo
 echo "================= Installing programs ================="
-sudo apt install -y sassc meson libglib2.0-dev inkscape optipng vlc qbittorrent gnome-tweaks steam neofetch conky rclone powerline
+sudo apt install -y sassc meson libglib2.0-dev inkscape optipng vlc qbittorrent gnome-tweaks steam neofetch conky rclone
 sudo flatpak install -y viber
 
 # 1.1: installing Vivaldi
@@ -48,24 +48,7 @@ cd ../
 sudo rm -r Pop_OS_custom_theme/
 
 
-# 4.0: configuring bash with powerline and nerd fonts
-echo
-echo "================= Configuring bash terminal emulator ================="
-git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git
-cd nerd-fonts
-sudo ./install.sh FiraCode
-cd ../
-sudo rm -r nerd-fonts/
-
-echo
-echo "================= Configuring powerline ================="
-echo -e '\n############# JA DODAJEM ZA POWERLINE ##############\nif [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then\n  powerline-daemon -q\n  POWERLINE_BASH_CONTINUATION=1\n  POWERLINE_BASH_SELECT=1\n  source /usr/share/powerline/bindings/bash/powerline.sh\nfi\n###################################################\n' >> ~/.bashrc
-source ~/.bashrc
-mkdir -p $HOME/.config/powerline
-cp -R /usr/share/powerline/config_files/* \
-      $HOME/.config/powerline/
-
-# 5.0: manual work
+# 4.0: manual work
 echo
 echo "================= To do ================="
 cd ~/
