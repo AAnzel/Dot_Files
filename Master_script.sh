@@ -18,9 +18,9 @@ sudo apt install -y sassc meson libglib2.0-dev inkscape optipng vlc qbittorrent 
 sudo flatpak install -y viber
 
 # 1.1: installing Vivaldi
-wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
-sudo add-apt-repository 'deb https://repo.vivaldi.com/archive/deb/ stable main'
-sudo apt update && sudo apt install -y vivaldi-stable
+# wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
+# sudo add-apt-repository 'deb https://repo.vivaldi.com/archive/deb/ stable main'
+# sudo apt update && sudo apt install -y vivaldi-stable
 
 
 # 2.0: copying configuration files
@@ -55,4 +55,5 @@ cd ~/
 echo "1. Add conky script to start-up programs"
 echo "2. Configure rclone"
 echo "3. Change font to Fura Code Retina (Nerf Font)"
+echo "4. Install Ublock Origin, Dark Reader, Gnome Integration, Grammarly, Translate, ..."
 
