@@ -6,7 +6,6 @@
 # 0.0: updating system
 echo
 echo "================= Updating system ================="
-cd Downloads/
 sudo apt update
 sudo apt full-upgrade
 
@@ -24,14 +23,13 @@ sudo flatpak install -y viber
 
 
 # 2.0: copying configuration files
-sudo cp to_do_list.txt ~/Documents/
-sudo cp -r .conky_configs ~/
+cp to_do_list.txt ~/Documents/
+cp -r .conky_configs ~/
 
 echo
 echo "================= Configuring neofetch ================="
-# Running neofetch so it can create config folder
-neofetch
-sudo cp neofetch/config.conf ~/.config/neofetch/
+mkdir -p ~/.config/neofetch/
+cp neofetch/config.conf ~/.config/neofetch/
 
 # Adding .bashrc entry
 echo -e '\n############# JA DODAJEM ZA NEOFETCH ##############\nneofetch --ascii_colors 1 \n###################################################\n' >> ~/.bashrc
@@ -43,7 +41,7 @@ echo "================= Changing theme ================="
 git clone https://github.com/AAnzel/Pop_OS_custom_theme
 cd Pop_OS_custom_theme/
 sudo sh pop-color-change.sh
-sudo sh pop-shell-ext-change.sh
+# sudo sh pop-shell-ext-change.sh
 cd ../
 sudo rm -r Pop_OS_custom_theme/
 
@@ -54,6 +52,6 @@ echo "================= To do ================="
 cd ~/
 echo "1. Add conky script to start-up programs"
 echo "2. Configure rclone"
-echo "3. Change font to Fura Code Retina (Nerf Font)"
+echo "3. Change font to Fura Code Retina (Nerd Font)"
 echo "4. Install Ublock Origin, Dark Reader, Gnome Integration, Grammarly, Translate, ..."
 
