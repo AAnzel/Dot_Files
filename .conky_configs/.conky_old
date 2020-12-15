@@ -51,8 +51,6 @@ ${color4}Uptime: $color$uptime
 ${color4}Kernel: $color$kernel${alignr}${color0}
 ${color4}Entropy: $color${entropy_avail}/${entropy_poolsize}$tab[${entropy_perc}%] 
 ${color5}${entropy_bar}
-${color4}Battery: $color$battery
-${color2}${battery_bar}
 
 ${color3}MEMORY & SWAP   ${hr 2}$color
 ${color4}RAM Usage: ${color}$mem/$memmax$tab[$memperc%]
@@ -66,6 +64,26 @@ ${color4}Core_1 Usage:$color ${cpu cpu1}% ${color2}${cpubar cpu1}
 ${color4}Core_2 Usage:$color ${cpu cpu2}% ${color2}${cpubar cpu2}
 ${color4}Core_3 Usage:$color ${cpu cpu3}% ${color2}${cpubar cpu3}
 ${color4}Core_4 Usage:$color ${cpu cpu4}% ${color2}${cpubar cpu4}
+${color4}Core_5 Usage:$color ${cpu cpu5}% ${color2}${cpubar cpu5}
+${color4}Core_6 Usage:$color ${cpu cpu6}% ${color2}${cpubar cpu6}
+${color4}Core_7 Usage:$color ${cpu cpu7}% ${color2}${cpubar cpu7}
+${color4}Core_8 Usage:$color ${cpu cpu8}% ${color2}${cpubar cpu8}
+${color4}Core_9 Usage:$color ${cpu cpu9}% ${color2}${cpubar cpu9}
+${color4}Core_10 Usage:$color ${cpu cpu10}% ${color2}${cpubar cpu10}
+${color4}Core_11 Usage:$color ${cpu cpu11}% ${color2}${cpubar cpu11}
+${color4}Core_12 Usage:$color ${cpu cpu12}% ${color2}${cpubar cpu12}
+${color4}Core_13 Usage:$color ${cpu cpu13}% ${color2}${cpubar cpu13}
+${color4}Core_14 Usage:$color ${cpu cpu14}% ${color2}${cpubar cpu14}
+${color4}Core_15 Usage:$color ${cpu cpu15}% ${color2}${cpubar cpu15}
+${color4}Core_16 Usage:$color ${cpu cpu16}% ${color2}${cpubar cpu16}
+${color4}Core_17 Usage:$color ${cpu cpu17}% ${color2}${cpubar cpu17}
+${color4}Core_18 Usage:$color ${cpu cpu18}% ${color2}${cpubar cpu18}
+${color4}Core_19 Usage:$color ${cpu cpu19}% ${color2}${cpubar cpu19}
+${color4}Core_20 Usage:$color ${cpu cpu20}% ${color2}${cpubar cpu20}
+${color4}Core_21 Usage:$color ${cpu cpu21}% ${color2}${cpubar cpu21}
+${color4}Core_22 Usage:$color ${cpu cpu22}% ${color2}${cpubar cpu22}
+${color4}Core_23 Usage:$color ${cpu cpu23}% ${color2}${cpubar cpu23}
+${color4}Core_24 Usage:$color ${cpu cpu24}% ${color2}${cpubar cpu24}
 ${color4}CPU Temperature: $color${acpitemp}°C
 ${color4}CPU Usage: $color${cpu cpu0}%
 ${color2}${cpugraph 35,300 ffffff ff0000}$color
@@ -88,18 +106,14 @@ ${color2} ${top_mem name 1}${alignr}${top_mem pid 1}   ${top_mem cpu 1}%   ${top
  ${top_mem name 5}${alignr}${top_mem pid 5}   ${top_mem cpu 5}%   ${top_mem mem_res 5}
 
 ${color3}NETWORKING   ${hr 2}$color
-${color4}Wireless:$color ${wireless_essid wlo1} (IP: ${addr wlo1})
-${color4}Wirless quality:$color ${wireless_link_qual_perc wlo1}%   ${color2}${wireless_link_bar wlo1}
-${color4}Down:$color ${downspeedf wlo1}KiB/s ${alignr}${color4}Up: $color${upspeedf wlo1}KiB/s
-${color4}Total:$color ${totaldown wlo1} ${alignr}${color4}Total: $color${totalup wlo1}
-${color2}${downspeedgraph wlo1 35,150 ffffff ff0000} ${alignr}${upspeedgraph wlo1 35,150 ffffff ff0000}$color
+${color4}Ethernet:$color IP: ${addr enp4s0}
+${color4}Down:$color ${downspeedf enp4s0}KiB/s ${alignr}${color4}Up: $color${upspeedf enp4s0}KiB/s
+${color4}Total:$color ${totaldown enp4s0} ${alignr}${color4}Total: $color${totalup enp4s0}
+${color2}${downspeedgraph enp4s0 35,150 ffffff ff0000} ${alignr}${upspeedgraph enp4s0 35,150 ffffff ff0000}$color
 
 ${color3}FILE SYSTEM   ${hr 2}$color
 ${color4}Disks 1 - Primary$color${alignr}${fs_used}/${fs_size}$tab[${fs_used_perc}%] 
 ${color4}Reads: $color${diskio_read sda}/s${alignr}${color4}Writes: $color${diskio_write sda}/s
 ${color2}${diskiograph_read sda 35,150 ffffff ff0000 scale -t}$color${alignr}${color2}${diskiograph_write sda 35,150 ffffff ff0000 scale -t}$color
 
-${color4}Disks 2 - Secondary$color${alignr}${fs_used /mnt/Data/}/${fs_size /mnt/Data/}$tab[${fs_used_perc /mnt/Data/}%] 
-${color4}Reads: $color${diskio_read sdb}/s${alignr}${color4}Writes: $color${diskio_write sdb}/s
-${color2}${diskiograph_read sdb 35,150 ffffff ff0000 scale -t}$color${alignr}${color2}${diskiograph_write sdb 35,150 ffffff ff0000 scale -t}$color
 ]]
