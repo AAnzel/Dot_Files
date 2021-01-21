@@ -13,7 +13,7 @@ sudo apt full-upgrade
 # 1.0: installing all of the programs
 echo
 echo "================= Installing programs ================="
-sudo apt install -y sassc meson libglib2.0-dev inkscape optipng vlc qbittorrent gnome-tweaks steam neofetch conky rclone
+sudo apt install -y sassc meson libglib2.0-dev inkscape optipng vlc qbittorrent gnome-tweaks steam neofetch conky rclone ghostwriter
 sudo flatpak install -y viber
 
 # 1.1: installing Vivaldi
@@ -36,14 +36,14 @@ echo -e '\n############# JA DODAJEM ZA NEOFETCH ##############\nneofetch --ascii
 
 
 # 3.0: changing theme
-echo
-echo "================= Changing theme ================="
-git clone https://github.com/AAnzel/Pop_OS_custom_theme
-cd Pop_OS_custom_theme/
-sudo sh pop-color-change.sh
+#echo
+#echo "================= Changing theme ================="
+#git clone https://github.com/AAnzel/Pop_OS_custom_theme
+#cd Pop_OS_custom_theme/
+#sudo sh pop-color-change.sh
 # sudo sh pop-shell-ext-change.sh
-cd ../
-sudo rm -r Pop_OS_custom_theme/
+#cd ../
+#sudo rm -r Pop_OS_custom_theme/
 
 
 # 4.0: manual work
@@ -52,6 +52,6 @@ echo "================= To do ================="
 cd ~/
 echo "1. Add conky script to start-up programs"
 echo "2. Configure rclone"
-echo "3. Change font to Fura Code Retina (Nerd Font)"
+echo "3. Apply Flat-Remix shell and gtk themes"
 echo "4. Install Ublock Origin, Dark Reader, Gnome Integration, Grammarly, Translate, ..."
-
+echo "5. Install deb packages of Skype and Signal (possible automation)"
