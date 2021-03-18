@@ -76,14 +76,6 @@ ${color4}Core_13 Usage:$color ${cpu cpu13}% ${color2}${cpubar cpu13}
 ${color4}Core_14 Usage:$color ${cpu cpu14}% ${color2}${cpubar cpu14}
 ${color4}Core_15 Usage:$color ${cpu cpu15}% ${color2}${cpubar cpu15}
 ${color4}Core_16 Usage:$color ${cpu cpu16}% ${color2}${cpubar cpu16}
-${color4}Core_17 Usage:$color ${cpu cpu17}% ${color2}${cpubar cpu17}
-${color4}Core_18 Usage:$color ${cpu cpu18}% ${color2}${cpubar cpu18}
-${color4}Core_19 Usage:$color ${cpu cpu19}% ${color2}${cpubar cpu19}
-${color4}Core_20 Usage:$color ${cpu cpu20}% ${color2}${cpubar cpu20}
-${color4}Core_21 Usage:$color ${cpu cpu21}% ${color2}${cpubar cpu21}
-${color4}Core_22 Usage:$color ${cpu cpu22}% ${color2}${cpubar cpu22}
-${color4}Core_23 Usage:$color ${cpu cpu23}% ${color2}${cpubar cpu23}
-${color4}Core_24 Usage:$color ${cpu cpu24}% ${color2}${cpubar cpu24}
 ${color4}CPU Temperature: $color${acpitemp}°C
 ${color4}CPU Usage: $color${cpu cpu0}%
 ${color2}${cpugraph 35,300 ffffff ff0000}$color
@@ -106,10 +98,10 @@ ${color2} ${top_mem name 1}${alignr}${top_mem pid 1}   ${top_mem cpu 1}%   ${top
  ${top_mem name 5}${alignr}${top_mem pid 5}   ${top_mem cpu 5}%   ${top_mem mem_res 5}
 
 ${color3}NETWORKING   ${hr 2}$color
-${color4}Ethernet:$color IP: ${addr enp4s0}
-${color4}Down:$color ${downspeedf enp4s0}KiB/s ${alignr}${color4}Up: $color${upspeedf enp4s0}KiB/s
-${color4}Total:$color ${totaldown enp4s0} ${alignr}${color4}Total: $color${totalup enp4s0}
-${color2}${downspeedgraph enp4s0 35,150 ffffff ff0000} ${alignr}${upspeedgraph enp4s0 35,150 ffffff ff0000}$color
+${color4}Ethernet:$color IP: ${addr eno1}
+${color4}Down:$color ${downspeedf eno1}KiB/s ${alignr}${color4}Up: $color${upspeedf eno1}KiB/s
+${color4}Total:$color ${totaldown eno1} ${alignr}${color4}Total: $color${totalup eno1}
+${color2}${downspeedgraph eno1 35,150 ffffff ff0000} ${alignr}${upspeedgraph eno1 35,150 ffffff ff0000}$color
 
 ${color3}FILE SYSTEM   ${hr 2}$color
 ${color4}Disks 1 - Primary$color${alignr}${fs_used}/${fs_size}$tab[${fs_used_perc}%] 
