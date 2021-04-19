@@ -17,7 +17,7 @@ conky.config = {
     draw_outline = false,
     draw_shades = false,
     extra_newline = false,
-    font = 'Play:size=9',
+    font = 'Noto:size=8',
     gap_x = 20,
     gap_y = 10,
     minimum_height = 5,
