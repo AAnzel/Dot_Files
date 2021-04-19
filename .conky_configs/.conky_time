@@ -45,6 +45,6 @@ conky.config = {
 }
 
 conky.text = [[
-${font Play:bold:size=55}$alignc${time %T}$font
+${font Noto:bold:size=50}$alignc${time %T}$font
 $alignc${color4}${time %A}, ${time %d}.${time %m}.${time %Y}
 ]]
