@@ -17,7 +17,7 @@ conky.config = {
     draw_outline = false,
     draw_shades = false,
     extra_newline = false,
-    font = 'Noto:size=9',
+    font = 'Noto:size=8',
     gap_x = 20,
     gap_y = -10,
     minimum_height = 5,
@@ -89,7 +89,7 @@ ${color2} ${top_mem name 1}${alignr}${top_mem pid 1}   ${top_mem cpu 1}%   ${top
 
 ${color3}NETWORKING   ${hr 2}$color
 ${color4}Wireless:$color ${wireless_essid wlo1} (IP: ${addr wlo1})
-${color4}Wirless quality:$color ${wireless_link_qual_perc wlo1}%   ${color2}${wireless_link_bar wlo1}
+${color4}Wireless quality:$color ${wireless_link_qual_perc wlo1}%   ${color2}${wireless_link_bar wlo1}
 ${color4}Down:$color ${downspeedf wlo1}KiB/s ${alignr}${color4}Up: $color${upspeedf wlo1}KiB/s
 ${color4}Total:$color ${totaldown wlo1} ${alignr}${color4}Total: $color${totalup wlo1}
 ${color2}${downspeedgraph wlo1 35,150 ffffff ff0000} ${alignr}${upspeedgraph wlo1 35,150 ffffff ff0000}$color
