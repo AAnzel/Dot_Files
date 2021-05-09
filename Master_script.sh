@@ -13,7 +13,7 @@ sudo apt full-upgrade
 # 1.0: installing all of the programs
 echo
 echo "================= Installing programs ================="
-sudo apt install -y sassc meson libglib2.0-dev inkscape optipng vlc qbittorrent gnome-tweaks steam neofetch conky rclone ghostwriter
+sudo apt install -y sassc meson libglib2.0-dev inkscape optipng vlc qbittorrent gnome-tweaks steam neofetch conky rclone ghostwriter keepassxc
 sudo flatpak install -y viber
 
 # 1.1: installing Vivaldi
