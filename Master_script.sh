@@ -38,18 +38,16 @@ echo -e '\n############# JA DODAJEM ZA NEOFETCH ##############\nneofetch --ascii
 # 3.0: installing Miniconda and packages
 echo
 echo "================= Installing Miniconda ================="
-mkdir -p ~/miniconda3
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
-bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
-rm -rf ~/miniconda3/miniconda.sh
-~/miniconda3/bin/conda init bash
-source .bashrc
+bash miniconda.sh
+source ~/.bashrc
+rm miniconda.sh
 
 echo
 echo "================= Installing Miniconda packages ================="
 conda update --all -y
 conda install -y numpy pandas keras scikit-learn
-conda install -y -c conda-forge altair jupyterlab biopython
+conda install -y -c conda-forge altair jupyterlab biopython streamlit
 conda update --all -y
 conda clean --all -y
 conda update --all -y
@@ -79,4 +77,3 @@ echo "1. Add conky script to start-up programs"
 echo "2. Configure rclone"
 echo "3. Apply Flat-Remix shell and gtk themes"
 echo "4. Install Ublock Origin, Dark Reader, Gnome Integration, Grammarly, Translate, ..."
-echo "5. Install streamlit"
