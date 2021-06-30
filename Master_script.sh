@@ -13,8 +13,8 @@ sudo apt full-upgrade
 # 1.0: installing all of the programs
 echo
 echo "================= Installing programs ================="
-sudo apt install -y sassc meson libglib2.0-dev inkscape optipng vlc qbittorrent gnome-tweaks steam neofetch conky rclone ghostwriter keepassxc
-sudo flatpak install -y viber
+sudo apt install -y vlc qbittorrent gnome-tweaks steam neofetch conky rclone ghostwriter keepassxc lutris
+sudo flatpak install viber skype signal
 
 # 1.1: installing Vivaldi
 # wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
@@ -74,4 +74,4 @@ echo "1. Add conky script to start-up programs"
 echo "2. Configure rclone"
 echo "3. Apply Flat-Remix shell and gtk themes"
 echo "4. Install Ublock Origin, Dark Reader, Gnome Integration, Grammarly, Translate, ..."
-echo "5. Install deb packages of Skype and Signal (possible automation)"
+echo "5. Install streamlit"
