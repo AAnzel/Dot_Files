@@ -14,7 +14,7 @@ sudo apt full-upgrade
 echo
 echo "================= Installing programs ================="
 sudo apt install -y vlc qbittorrent gnome-tweaks steam neofetch conky rclone ghostwriter keepassxc lutris openconnect network-manager-openconnect network-manager-openconnect-gnome
-sudo flatpak install viber skype signal
+sudo flatpak install -y viber skype signal
 
 # 1.1: installing Vivaldi
 # wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
@@ -24,7 +24,7 @@ sudo flatpak install viber skype signal
 
 # 2.0: copying configuration files
 cp to_do_list.txt ~/Documents/
-cp -r .conky_configs ~/
+sudo cp -r .conky_configs ~/
 
 echo
 echo "================= Configuring neofetch ================="
