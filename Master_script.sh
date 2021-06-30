@@ -13,7 +13,7 @@ sudo apt full-upgrade
 # 1.0: installing all of the programs
 echo
 echo "================= Installing programs ================="
-sudo apt install -y vlc qbittorrent gnome-tweaks steam neofetch conky rclone ghostwriter keepassxc lutris
+sudo apt install -y vlc qbittorrent gnome-tweaks steam neofetch conky rclone ghostwriter keepassxc lutris openconnect network-manager-openconnect network-manager-openconnect-gnome
 sudo flatpak install viber skype signal
 
 # 1.1: installing Vivaldi
@@ -32,7 +32,7 @@ mkdir -p ~/.config/neofetch/
 cp neofetch/config.conf ~/.config/neofetch/
 
 # Adding .bashrc entry
-echo -e '\n############# JA DODAJEM ZA NEOFETCH ##############\nneofetch --ascii_colors 1 \n###################################################\n' >> ~/.bashrc
+echo -e '\n############# JA DODAJEM ZA NEOFETCH ##############\nneofetch --ascii_colors 1 8 \n###################################################\n' >> ~/.bashrc
 
 
 # 3.0: installing Miniconda and packages
