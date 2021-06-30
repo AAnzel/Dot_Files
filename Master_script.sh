@@ -65,8 +65,13 @@ conda clean --all -y
 #cd ../
 #sudo rm -r Pop_OS_custom_theme/
 
+# 4.0: Git config
+echo
+echo "================= Git config =============="
+git config --global user.name "AAnzel"
+git config --global user.email "44969003+AAnzel@users.noreply.github.com"
 
-# 4.0: manual work
+# 5.0: manual work
 echo
 echo "================= To do ================="
 cd ~/
