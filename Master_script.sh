@@ -15,7 +15,7 @@ echo
 echo "================= Installing programs ================="
 sudo apt install -y vlc qbittorrent gnome-tweaks steam neofetch conky rclone ghostwriter keepassxc lutris openconnect network-manager-openconnect network-manager-openconnect-gnome ruby-full imagemagick
 sudo gem install bundler
-sudo flatpak install -y viber skype signal
+sudo flatpak install -y viber skype signal vscodium
 
 # 1.1: installing Vivaldi
 # wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
