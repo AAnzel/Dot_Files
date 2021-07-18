@@ -48,7 +48,7 @@ echo
 echo "================= Installing Miniconda packages ================="
 conda update --all -y
 conda install -y numpy pandas keras scikit-learn
-conda install -y -c conda-forge altair jupyterlab biopython streamlit
+conda install -y -c conda-forge altair altair-saver jupyterlab biopython streamlit
 conda update --all -y
 conda clean --all -y
 conda update --all -y
