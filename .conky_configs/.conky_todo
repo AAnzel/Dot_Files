@@ -4,6 +4,7 @@ conky.config = {
 	color3 = '696969',
 	color4 = 'D3D3D3',
 	color5 = '6F6F6F',
+	color6 = '000000',
     alignment = 'middle_left',
     background = false,
     border_width = 1,
@@ -17,7 +18,7 @@ conky.config = {
     draw_outline = false,
     draw_shades = false,
     extra_newline = false,
-    font = 'Noto:size=8',
+    font = 'Noto:bold:size=8',
     gap_x = 20,
     gap_y = 10,
     minimum_height = 5,
@@ -45,8 +46,8 @@ conky.config = {
 }
 
 conky.text = [[
-${color4}To do:$color
-${color4}${hr 1}$color
-
+${color6}To do:
+${hr 1}
 ${exec cat Documents/to_do_list.txt}
+$color
 ]]
