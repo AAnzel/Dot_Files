@@ -45,14 +45,15 @@ source ~/.bashrc
 rm miniconda.sh
 
 echo
-echo "================= Installing Miniconda packages ================="
+echo "================= Installing Miniconda and pip packages ================="
 conda update --all -y
-conda install -y numpy pandas keras scikit-learn
-conda install -y -c conda-forge altair altair-saver jupyterlab biopython streamlit
-conda update --all -y
-conda clean --all -y
+conda install -y numpy pandas keras scikit-learn openpyxl
+conda install -y -c conda-forge altair altair-saver jupyterlab biopython
 conda update --all -y
 conda clean --all -y
+conda update --all -y
+conda clean --all -y
+pip install streamlit
 
 # 4.0: changing theme
 #echo
