@@ -53,7 +53,7 @@ conda update --all -y
 conda clean --all -y
 conda update --all -y
 conda clean --all -y
-pip install streamlit
+pip install streamlit pysmiles
 
 # 4.0: changing theme
 #echo
