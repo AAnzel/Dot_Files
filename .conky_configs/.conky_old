@@ -1,9 +1,10 @@
 conky.config = {
 	color0 = 'FFFFFF',
-	color2 = 'B22222',
+	color2 = '70C9D7',
 	color3 = '696969',
 	color4 = 'D3D3D3',
 	color5 = '6F6F6F',
+	color6 = 'F8B571',
     alignment = 'middle_right',
     background = false,
     border_width = 1,
@@ -50,13 +51,13 @@ ${color4}System: $color$nodename $machine
 ${color4}Uptime: $color$uptime
 ${color4}Kernel: $color$kernel${alignr}${color0}
 ${color4}Entropy: $color${entropy_avail}/${entropy_poolsize}$tab[${entropy_perc}%] 
-${color5}${entropy_bar}
+${color6}${entropy_bar}
 ${color4}Battery: $color$battery
 ${color2}${battery_bar}
 
 ${color3}MEMORY & SWAP   ${hr 2}$color
 ${color4}RAM Usage: ${color}$mem/$memmax$tab[$memperc%]
-${color2}${memgraph 35,300 ffffff ff0000}
+${color2}${memgraph 35,300 FFFFFF F8B571}
 ${color4}Swap Usage: ${color}$swap/$swapmax$tab[$swapperc%]
 ${color2}${swapbar}
 
@@ -66,9 +67,21 @@ ${color4}Core_1 Usage:$color ${cpu cpu1}% ${color2}${cpubar cpu1}
 ${color4}Core_2 Usage:$color ${cpu cpu2}% ${color2}${cpubar cpu2}
 ${color4}Core_3 Usage:$color ${cpu cpu3}% ${color2}${cpubar cpu3}
 ${color4}Core_4 Usage:$color ${cpu cpu4}% ${color2}${cpubar cpu4}
+${color4}Core_5 Usage:$color ${cpu cpu5}% ${color2}${cpubar cpu5}
+${color4}Core_6 Usage:$color ${cpu cpu6}% ${color2}${cpubar cpu6}
+${color4}Core_7 Usage:$color ${cpu cpu7}% ${color2}${cpubar cpu7}
+${color4}Core_8 Usage:$color ${cpu cpu8}% ${color2}${cpubar cpu8}
+${color4}Core_9 Usage:$color ${cpu cpu9}% ${color2}${cpubar cpu9}
+${color4}Core_10 Usage:$color ${cpu cpu10}% ${color2}${cpubar cpu10}
+${color4}Core_11 Usage:$color ${cpu cpu11}% ${color2}${cpubar cpu11}
+${color4}Core_12 Usage:$color ${cpu cpu12}% ${color2}${cpubar cpu12}
+${color4}Core_13 Usage:$color ${cpu cpu13}% ${color2}${cpubar cpu13}
+${color4}Core_14 Usage:$color ${cpu cpu14}% ${color2}${cpubar cpu14}
+${color4}Core_15 Usage:$color ${cpu cpu15}% ${color2}${cpubar cpu15}
+${color4}Core_16 Usage:$color ${cpu cpu16}% ${color2}${cpubar cpu16}
 ${color4}CPU Temperature: $color${acpitemp}°C
 ${color4}CPU Usage: $color${cpu cpu0}%
-${color2}${cpugraph 35,300 ffffff ff0000}$color
+${color2}${cpugraph 35,300 FFFFFF F8B571}$color
 
 ${color3}TOP 5 PROCESSES   ${hr 2}$color
 ${color4}CPU Usage$color
@@ -92,14 +105,14 @@ ${color4}Wireless:$color ${wireless_essid wlo1} (IP: ${addr wlo1})
 ${color4}Wireless quality:$color ${wireless_link_qual_perc wlo1}%   ${color2}${wireless_link_bar wlo1}
 ${color4}Down:$color ${downspeedf wlo1}KiB/s ${alignr}${color4}Up: $color${upspeedf wlo1}KiB/s
 ${color4}Total:$color ${totaldown wlo1} ${alignr}${color4}Total: $color${totalup wlo1}
-${color2}${downspeedgraph wlo1 35,150 ffffff ff0000} ${alignr}${upspeedgraph wlo1 35,150 ffffff ff0000}$color
+${color2}${downspeedgraph wlo1 35,150 FFFFFF F8B571} ${alignr}${upspeedgraph wlo1 35,150 FFFFFF F8B571}$color
 
 ${color3}FILE SYSTEM   ${hr 2}$color
 ${color4}Disks 1 - Primary$color${alignr}${fs_used}/${fs_size}$tab[${fs_used_perc}%] 
 ${color4}Reads: $color${diskio_read sda}/s${alignr}${color4}Writes: $color${diskio_write sda}/s
-${color2}${diskiograph_read sda 35,150 ffffff ff0000 scale -t}$color${alignr}${color2}${diskiograph_write sda 35,150 ffffff ff0000 scale -t}$color
+${color2}${diskiograph_read sda 35,150 FFFFFF F8B571 scale -t}$color${alignr}${color2}${diskiograph_write sda 35,150 FFFFFF F8B571 scale -t}$color
 
 ${color4}Disks 2 - Secondary$color${alignr}${fs_used /mnt/Data/}/${fs_size /mnt/Data/}$tab[${fs_used_perc /mnt/Data/}%] 
 ${color4}Reads: $color${diskio_read sdb}/s${alignr}${color4}Writes: $color${diskio_write sdb}/s
-${color2}${diskiograph_read sdb 35,150 ffffff ff0000 scale -t}$color${alignr}${color2}${diskiograph_write sdb 35,150 ffffff ff0000 scale -t}$color
+${color2}${diskiograph_read sdb 35,150 FFFFFF F8B571 scale -t}$color${alignr}${color2}${diskiograph_write sdb 35,150 FFFFFF F8B571 scale -t}$color
 ]]
