@@ -13,7 +13,7 @@ sudo apt full-upgrade
 # 1.0: installing all of the programs
 echo
 echo "================= Installing programs ================="
-sudo apt install -y vlc qbittorrent gnome-tweaks steam neofetch conky rclone ghostwriter keepassxc lutris openconnect network-manager-openconnect network-manager-openconnect-gnome ruby-full imagemagick mpv cava default-jre wakeonlan
+sudo apt install -y vlc qbittorrent gnome-tweaks steam neofetch conky rclone ghostwriter keepassxc lutris openconnect network-manager-openconnect network-manager-openconnect-gnome ruby-full imagemagick mpv cava wakeonlan htop
 sudo gem install bundler
 sudo flatpak install -y viber skype signal vscodium
 
