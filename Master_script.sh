@@ -25,7 +25,7 @@ sudo flatpak install -y viber skype signal vscodium
 
 # 2.0: copying configuration files
 cp to_do_list.txt ~/Documents/
-sudo cp -r .conky_configs ~/
+sudo cp -r .conky_configs/ ~/
 
 echo
 echo "================= Configuring neofetch ================="
@@ -33,7 +33,7 @@ mkdir -p ~/.config/neofetch/
 cp neofetch/config.conf ~/.config/neofetch/
 
 # Adding .bashrc entry
-echo -e '\n############# JA DODAJEM ZA NEOFETCH ##############\nneofetch --ascii_colors 1 8 \n###################################################\n' >> ~/.bashrc
+#echo -e '\n############# JA DODAJEM ZA NEOFETCH ##############\nneofetch --ascii_colors 1 8 \n###################################################\n' >> ~/.bashrc
 
 
 # 3.0: installing Miniconda and packages
@@ -47,13 +47,13 @@ rm miniconda.sh
 echo
 echo "================= Installing Miniconda and pip packages ================="
 conda update --all -y
-conda install -y numpy pandas keras scikit-learn openpyxl networkx matplotlib
-conda install -y -c conda-forge altair altair-saver jupyterlab biopython openbabel
+conda install -y numpy pandas keras scikit-learn
+conda install -y -c conda-forge altair altair-saver jupyterlab biopython
 conda update --all -y
 conda clean --all -y
 conda update --all -y
 conda clean --all -y
-pip install streamlit pysmiles
+pip install streamlit
 
 # 4.0: changing theme
 #echo
@@ -77,5 +77,5 @@ echo "================= To do ================="
 cd ~/
 echo "1. Add conky script to start-up programs"
 echo "2. Configure rclone"
-echo "3. Apply Flat-Remix shell and gtk themes"
-echo "4. Install Ublock Origin, Dark Reader, Gnome Integration, Grammarly, Translate, ..."
+#echo "3. Apply Flat-Remix shell and gtk themes"
+echo "3. Install Ublock Origin, Dark Reader, Gnome Integration, Grammarly, Translate, ..."
