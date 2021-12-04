@@ -57,7 +57,7 @@ ${color2}${battery_bar}
 
 ${color3}MEMORY & SWAP   ${hr 2}$color
 ${color4}RAM Usage: ${color}$mem/$memmax$tab[$memperc%]
-${color2}${memgraph 50,600 FFFFFF F8B571}
+${color2}${memgraph 80,600 FFFFFF F8B571}
 ${color4}Swap Usage: ${color}$swap/$swapmax$tab[$swapperc%]
 ${color2}${swapbar}
 
@@ -81,7 +81,7 @@ ${color4}Core_15 Usage:$color ${cpu cpu15}% ${color2}${cpubar cpu15}
 ${color4}Core_16 Usage:$color ${cpu cpu16}% ${color2}${cpubar cpu16}
 ${color4}CPU Temperature: $color${acpitemp}°C
 ${color4}CPU Usage: $color${cpu cpu0}%
-${color2}${cpugraph 50,600 FFFFFF F8B571}$color
+${color2}${cpugraph 80,600 FFFFFF F8B571}$color
 
 ${color3}TOP 5 PROCESSES   ${hr 2}$color
 ${color4}CPU Usage$color
@@ -105,10 +105,10 @@ ${color4}Wireless:$color ${wireless_essid wlp4s0} (IP: ${addr wlp4s0})
 ${color4}Wireless quality:$color ${wireless_link_qual_perc wlp4s0}%   ${color2}${wireless_link_bar wlp4s0}
 ${color4}Down:$color ${downspeedf wlp4s0}KiB/s ${alignr}${color4}Up: $color${upspeedf wlp4s0}KiB/s
 ${color4}Total:$color ${totaldown wlp4s0} ${alignr}${color4}Total: $color${totalup wlp4s0}
-${color2}${downspeedgraph wlp4s0 50,300 FFFFFF F8B571} ${alignr}${upspeedgraph wlp4s0 50,300 FFFFFF F8B571}$color
+${color2}${downspeedgraph wlp4s0 80,280 FFFFFF F8B571} ${alignr}${upspeedgraph wlp4s0 80,280 FFFFFF F8B571}$color
 
 ${color3}FILE SYSTEM   ${hr 2}$color
 ${color4}Disks 1 - Primary$color${alignr}${fs_used}/${fs_size}$tab[${fs_used_perc}%] 
 ${color4}Reads: $color${diskio_read sda}/s${alignr}${color4}Writes: $color${diskio_write sda}/s
-${color2}${diskiograph_read sda 50,300 FFFFFF F8B571 scale -t}$color${alignr}${color2}${diskiograph_write sda 50,300 FFFFFF F8B571 scale -t}$color
+${color2}${diskiograph_read sda 80,280 FFFFFF F8B571 scale -t}$color${alignr}${color2}${diskiograph_write sda 80,280 FFFFFF F8B571 scale -t}$color
 ]]
