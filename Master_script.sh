@@ -47,7 +47,7 @@ rm miniconda.sh
 echo
 echo "================= Installing Miniconda and pip packages ================="
 conda update --all -y
-conda install -y numpy pandas keras scikit-learn
+conda install -y numpy pandas keras scikit-learn gensim
 conda install -y -c conda-forge altair altair-saver jupyterlab biopython
 conda update --all -y
 conda clean --all -y
