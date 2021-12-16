@@ -13,7 +13,7 @@ sudo apt full-upgrade
 # 1.0: installing all of the programs
 echo
 echo "================= Installing programs ================="
-sudo apt install -y vlc qbittorrent gnome-tweaks steam neofetch conky rclone keepassxc lutris openconnect network-manager-openconnect network-manager-openconnect-gnome ruby-full imagemagick mpv cava wakeonlan htop
+sudo apt install -y vlc qbittorrent gnome-tweaks steam neofetch conky rclone keepassxc lutris openconnect network-manager-openconnect network-manager-openconnect-gnome ruby-full imagemagick mpv cavahtop alacritty
 sudo gem install bundler
 sudo flatpak install -y com.viber.Viber com.skype.Client org.signal.Signal com.vscodium.codium com.microsoft.Teams
 
@@ -24,13 +24,10 @@ sudo flatpak install -y com.viber.Viber com.skype.Client org.signal.Signal com.v
 
 
 # 2.0: copying configuration files
-cp to_do_list.txt ~/Documents/
-sudo cp -r .conky_configs/ ~/
-
 echo
-echo "================= Configuring neofetch ================="
-mkdir -p ~/.config/neofetch/
-cp neofetch/config.conf ~/.config/neofetch/
+echo "================= Copying configuration files ================="
+cp to_do_list.txt ~/Documents/
+cp -r neofetch/ alacritty/ conky_configs/ ~/.config/
 
 # Adding .bashrc entry
 #echo -e '\n############# JA DODAJEM ZA NEOFETCH ##############\nneofetch --ascii_colors 1 8 \n###################################################\n' >> ~/.bashrc
@@ -79,3 +76,4 @@ echo "1. Add conky script to start-up programs"
 echo "2. Configure rclone"
 #echo "3. Apply Flat-Remix shell and gtk themes"
 echo "3. Install Ublock Origin, Dark Reader, Gnome Integration, Grammarly, Translate, ..."
+echo "4. Create and add new SSH key to GitHub, Azure, etc."
