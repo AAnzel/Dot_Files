@@ -15,7 +15,7 @@ echo
 echo "================= Installing programs ================="
 sudo apt install -y vlc qbittorrent gnome-tweaks steam neofetch conky rclone keepassxc lutris openconnect network-manager-openconnect network-manager-openconnect-gnome ruby-full imagemagick mpv cavahtop alacritty ca-certificates curl gnupg lsb-release
 sudo gem install bundler
-sudo flatpak install -y com.viber.Viber com.skype.Client org.signal.Signal com.vscodium.codium com.microsoft.Teams
+sudo flatpak install -y com.viber.Viber com.skype.Client org.signal.Signal com.vscodium.codium
 
 # 1.1: installing Docker
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
@@ -84,6 +84,6 @@ echo "================= To do ================="
 cd ~/
 echo "1. Add conky script to start-up programs"
 echo "2. Configure rclone"
-#echo "3. Apply Flat-Remix shell and gtk themes"
-echo "3. Install Ublock Origin, Dark Reader, Gnome Integration, Grammarly, Translate, ..."
-echo "4. Create and add new SSH key to GitHub, Azure, etc."
+echo "3. Install MS Teams .deb"
+echo "4. Install Ublock Origin, Dark Reader, Gnome Integration, Grammarly, Translate, ..."
+echo "5. Create and add new SSH key to GitHub, Azure, etc."
