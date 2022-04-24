@@ -48,6 +48,6 @@ conky.config = {
 conky.text = [[
 ${color0}To do:
 ${hr 1}
-${exec cat Documents/to_do_list.txt}
+${exec cat ~/Documents/to_do_list.txt}
 $color
 ]]
