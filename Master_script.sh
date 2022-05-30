@@ -15,7 +15,7 @@ echo
 echo "================= Installing programs ================="
 sudo apt install -y vlc qbittorrent gnome-tweaks steam neofetch conky rclone keepassxc lutris openconnect network-manager-openconnect network-manager-openconnect-gnome ruby-full imagemagick mpv cava btop optipng sassc inkscape
 sudo gem install bundler
-flatpak install --noninteractive -y flathub com.viber.Viber com.skype.Client org.signal.Signal com.vscodium.codium com.microsoft.Teams
+flatpak install --noninteractive -y flathub com.viber.Viber com.skype.Client org.signal.Signal com.vscodium.codium com.microsoft.Teams com.heroicgameslauncher.hgl
 
 # 1.1: installing Docker
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
