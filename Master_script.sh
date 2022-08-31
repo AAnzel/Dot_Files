@@ -37,7 +37,7 @@ sudo apt install -y docker-ce docker-ce-cli containerd.io
 echo
 echo "================= Copying configuration files ================="
 cp to_do_list.txt ~/Documents/
-cp -r neofetch/ alacritty/ conky_configs/ ~/.config/
+cp -r neofetch/ alacritty/ conky_configs/ cava/ ~/.config/
 
 # Adding .bashrc entry
 #echo -e '\n############# JA DODAJEM ZA NEOFETCH ##############\nneofetch --ascii_colors 1 8 \n###################################################\n' >> ~/.bashrc
