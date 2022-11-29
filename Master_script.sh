@@ -76,7 +76,8 @@ git config --global user.email "44969003+AAnzel@users.noreply.github.com"
 echo
 echo "================= To do ================="
 cd ~/
-echo "1. Add conky script to start-up programs"
-echo "2. Configure rclone"
+echo "1. Add conky script to start-up programs."
+echo "2. Configure rclone."
 echo "3. Install Ublock Origin, Dark Reader, Gnome Integration, Grammarly, Translate, ..."
 echo "4. Create and add new SSH key to GitHub, Azure, etc."
+echo "5. Sync VSCodium configs."
