@@ -27,12 +27,6 @@ echo \
 sudo apt update
 sudo apt install -y docker-ce docker-ce-cli containerd.io
 
-# 1.1: installing Vivaldi
-# wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
-# sudo add-apt-repository 'deb https://repo.vivaldi.com/archive/deb/ stable main'
-# sudo apt update && sudo apt install -y vivaldi-stable
-
-
 # 2.0: copying configuration files
 echo
 echo "================= Copying configuration files ================="
@@ -55,7 +49,7 @@ echo
 echo "================= Installing Miniconda and pip packages ================="
 conda update --all -y
 conda install -y numpy pandas keras scikit-learn gensim
-conda install -y -c conda-forge altair altair-saver jupyterlab biopython
+conda install -y -c conda-forge altair altair-saver jupyterlab biopython pipreq plotly
 conda update --all -y
 conda clean --all -y
 conda update --all -y
