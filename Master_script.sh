@@ -7,7 +7,7 @@
 echo
 echo "================= Updating system ================="
 sudo apt update
-sudo apt full-upgrade
+sudo apt full-upgrade -y
 
 
 # 1.0: installing all of the programs
@@ -49,7 +49,7 @@ echo
 echo "================= Installing Miniconda and pip packages ================="
 conda update --all -y
 conda install -y numpy pandas keras scikit-learn gensim
-conda install -y -c conda-forge altair altair-saver jupyterlab biopython pipreq plotly
+conda install -y -c conda-forge altair jupyterlab biopython pipreqs plotly
 conda update --all -y
 conda clean --all -y
 conda update --all -y
@@ -78,6 +78,6 @@ echo "================= To do ================="
 cd ~/
 echo "1. Add conky script to start-up programs."
 echo "2. Configure rclone."
-echo "3. Install Ublock Origin, Dark Reader, Gnome Integration, Grammarly, Translate, ..."
+echo "3. Sync Firefox."
 echo "4. Create and add new SSH key to GitHub, Azure, etc."
 echo "5. Sync VSCodium configs."
