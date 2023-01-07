@@ -34,7 +34,7 @@ cp to_do_list.txt ~/Documents/
 cp -r neofetch/ alacritty/ conky_configs/ cava/ ~/.config/
 
 # Adding .bashrc entry
-#echo -e '\n############# JA DODAJEM ZA NEOFETCH ##############\nneofetch --ascii_colors 1 8 \n###################################################\n' >> ~/.bashrc
+echo -e '\n############# JA DODAJEM ZA NEOFETCH ##############\nneofetch --ascii_colors 1 8 \n###################################################\n' >> ~/.bashrc
 
 
 # 3.0: installing Miniconda and packages
