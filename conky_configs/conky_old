@@ -5,7 +5,7 @@ conky.config = {
 	color4 = 'D3D3D3',
 	color5 = '6F6F6F',
 	color6 = 'F8B571',
-	color7 = 'ff3333',
+	color7 = '1A5FB4',
     alignment = 'middle_right',
     background = false,
     border_width = 1,
@@ -19,7 +19,7 @@ conky.config = {
     draw_outline = false,
     draw_shades = false,
     extra_newline = false,
-    font = 'Noto:size=8',
+    font = 'Noto Sans Regular:size=7',
     gap_x = 20,
     gap_y = -10,
     minimum_height = 5,
@@ -99,11 +99,11 @@ ${color7} ${top_mem name 1}${alignr}${top_mem pid 1}   ${top_mem cpu 1}%   ${top
  ${top_mem name 5}${alignr}${top_mem pid 5}   ${top_mem cpu 5}%   ${top_mem mem_res 5}
 
 ${color3}NETWORKING   ${hr 2}$color
-${color4}Wireless:$color ${wireless_essid bnep0} (IP: ${addr bnep0})
-${color4}Wireless quality:$color ${wireless_link_qual_perc bnep0}%   ${color7}${wireless_link_bar bnep0}
-${color4}Down:$color ${downspeedf bnep0}KiB/s ${alignr}${color4}Up: $color${upspeedf bnep0}KiB/s
-${color4}Total:$color ${totaldown bnep0} ${alignr}${color4}Total: $color${totalup bnep0}
-${color7}${downspeedgraph bnep0 40,140 FFFFFF F8B571} ${alignr}${upspeedgraph bnep0 40,140 FFFFFF F8B571}$color
+${color4}Wireless:$color ${wireless_essid wlp3s0} (IP: ${addr wlp3s0})
+${color4}Wireless quality:$color ${wireless_link_qual_perc wlp3s0}%   ${color7}${wireless_link_bar wlp3s0}
+${color4}Down:$color ${downspeedf wlp3s0}KiB/s ${alignr}${color4}Up: $color${upspeedf wlp3s0}KiB/s
+${color4}Total:$color ${totaldown wlp3s0} ${alignr}${color4}Total: $color${totalup wlp3s0}
+${color7}${downspeedgraph wlp3s0 40,140 FFFFFF F8B571} ${alignr}${upspeedgraph wlp3s0 40,140 FFFFFF F8B571}$color
 
 ${color3}FILE SYSTEM   ${hr 2}$color
 ${color4}Disks 1 - Primary$color${alignr}${fs_used}/${fs_size}$tab[${fs_used_perc}%] 

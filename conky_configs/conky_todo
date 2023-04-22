@@ -18,7 +18,7 @@ conky.config = {
     draw_outline = false,
     draw_shades = false,
     extra_newline = false,
-    font = 'Noto:bold:size=8',
+    font = 'Noto Sans Regular:bold:size=8',
     gap_x = 20,
     gap_y = 10,
     minimum_height = 5,
