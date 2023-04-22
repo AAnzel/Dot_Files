@@ -13,9 +13,9 @@ sudo apt full-upgrade -y
 # 1.0: installing all of the programs
 echo
 echo "================= Installing programs ================="
-sudo apt install -y vlc qbittorrent gnome-tweaks steam neofetch conky rclone keepassxc lutris openconnect network-manager-openconnect network-manager-openconnect-gnome ruby-full imagemagick mpv cava btop optipng sassc inkscape
+sudo apt install -y vlc qbittorrent gnome-tweaks neofetch conky rclone keepassxc ruby-full imagemagick mpv cava btop optipng sassc inkscape
 sudo gem install bundler
-flatpak install --noninteractive -y flathub com.viber.Viber com.skype.Client org.signal.Signal com.vscodium.codium com.microsoft.Teams com.heroicgameslauncher.hgl
+flatpak install --noninteractive -y flathub com.viber.Viber com.skype.Client org.signal.Signal com.vscodium.codium 
 
 # 1.1: installing Docker
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
@@ -34,7 +34,7 @@ cp to_do_list.txt ~/Documents/
 cp -r neofetch/ alacritty/ conky_configs/ cava/ ~/.config/
 
 # Adding .bashrc entry
-echo -e '\n############# JA DODAJEM ZA NEOFETCH ##############\nneofetch --ascii_colors 1 8 \n###################################################\n' >> ~/.bashrc
+echo -e '\n############# Added by Aleksandar ##############\nneofetch\nexport PS1="\[$(tput bold)\]\[\033[38;5;39m\]\u\[$(tput sgr0)\]@\h \[$(tput bold)\]\t\[$(tput sgr0)\] \$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\n[\w] \\$ \[$(tput sgr0)\]"\n###################################################\n' >> ~/.bashrc
 
 
 # 3.0: installing Miniconda and packages
