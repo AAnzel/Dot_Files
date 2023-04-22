@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Exec=sh /home/alexein/.config/conky_configs/conky_start.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=Conky

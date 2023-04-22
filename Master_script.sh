@@ -32,6 +32,7 @@ echo
 echo "================= Copying configuration files ================="
 cp to_do_list.txt ~/Documents/
 cp -r neofetch/ alacritty/ conky_configs/ cava/ ~/.config/
+cp conky.desktop ~/.config/autostart/
 
 # Adding .bashrc entry
 echo -e '\n############# Added by Aleksandar ##############\nneofetch\nexport PS1="\[$(tput bold)\]\[\033[38;5;39m\]\u\[$(tput sgr0)\]@\h \[$(tput bold)\]\t\[$(tput sgr0)\] \$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\n[\w] \\$ \[$(tput sgr0)\]"\n###################################################\n' >> ~/.bashrc
@@ -54,7 +55,7 @@ conda update --all -y
 conda clean --all -y
 conda update --all -y
 conda clean --all -y
-pip install streamlit
+#pip install streamlit
 
 # 4.0: changing theme
 #echo
@@ -76,8 +77,6 @@ git config --global user.email "44969003+AAnzel@users.noreply.github.com"
 echo
 echo "================= To do ================="
 cd ~/
-echo "1. Add conky script to start-up programs."
-echo "2. Configure rclone."
-echo "3. Sync Firefox."
-echo "4. Create and add new SSH key to GitHub, Azure, etc."
-echo "5. Sync VSCodium configs."
+echo "1. Configure rclone."
+echo "2. Create and add new SSH key to GitHub, Azure, etc."
+echo "3. Sync VSCodium configs."
