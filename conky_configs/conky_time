@@ -5,6 +5,7 @@ conky.config = {
 	color4 = 'D3D3D3',
 	color5 = '6F6F6F',
     alignment = 'top_middle',
+    xinerama_head = 0,
     background = false,
     border_width = 1,
     cpu_avg_samples = 4,
