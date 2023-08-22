@@ -35,7 +35,7 @@ cp -r neofetch/ alacritty/ conky_configs/ cava/ ~/.config/
 cp conky.desktop ~/.config/autostart/
 
 # Adding .bashrc entry
-echo -e '\n############# Added by Aleksandar ##############\nneofetch\nexport PS1="\[$(tput bold)\]\[\033[38;5;39m\]\u\[$(tput sgr0)\]@\h \[$(tput bold)\]\t\[$(tput sgr0)\] \$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\n[\w] \\$ \[$(tput sgr0)\]"\n###################################################\n' >> ~/.bashrc
+echo -e '\n############# Added by Aleksandar ##############\nneofetch\nexport PS1="\[$(tput bold)\]\[\033[38;5;39m\]\u\[$(tput sgr0)\]@\h | \[$(tput bold)\]\d\[$(tput sgr0)\] | \[$(tput bold)\]\t\[$(tput sgr0)\] \$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\n[\w] \\$ \[$(tput sgr0)\]"\n###################################################\n' >> ~/.bashrc
 
 
 # 3.0: installing Miniconda and packages
