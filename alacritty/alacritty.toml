@@ -1,0 +1,12 @@
+[cursor.style]
+blinking = "On"
+shape = "Block"
+
+[window]
+decorations = "none"
+dynamic_padding = true
+opacity = 0.94
+
+[window.padding]
+x = 8
+y = 8
