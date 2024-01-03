@@ -69,6 +69,7 @@ echo
 echo "================= Git config =============="
 git config --global user.name "AAnzel"
 git config --global user.email "44969003+AAnzel@users.noreply.github.com"
+git config --global core.editor "nano"
 
 # 5.0: manual work
 echo
