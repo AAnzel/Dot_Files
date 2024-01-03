@@ -41,10 +41,10 @@ echo -e '\n############# Added by Aleksandar ##############\nneofetch\nexport PS
 # 3.0: installing Miniconda and packages
 echo
 echo "================= Installing Miniconda ================="
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
-bash miniconda.sh
-source ~/.bashrc
-rm miniconda.sh
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm -rf ~/miniconda3/miniconda.sh
 
 echo
 echo "================= Installing Miniconda and pip packages ================="
