@@ -42,7 +42,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 
 # Adding .bashrc entry
-echo -e '\n############# Added by Aleksandar ##############\nneofetch\n bindkey "^R" history-incremental-search-backward\n###################################################\n' >> ~/.bashrc
+echo -e '\n############# Added by Aleksandar ##############\nneofetch\n bindkey "^R" 
+history-incremental-search-backward\n###################################################\n' >> ~/.zshrc
+
 
 
 # 3.0: installing Miniconda and packages
