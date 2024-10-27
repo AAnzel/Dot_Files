@@ -6,7 +6,7 @@ conky.config = {
 	color5 = '6F6F6F',
 	color6 = 'EE82EE',
     alignment = 'middle_right',
-    background = false,
+    background = true,
     border_width = 1,
     cpu_avg_samples = 4,
     default_color = 'white',
@@ -58,7 +58,8 @@ ${color2}${battery_bar}
 
 ${color3}MEMORY & SWAP   ${hr 2}$color
 ${color4}RAM Usage: ${color}$mem/$memmax$tab[$memperc%]
-${color2}${memgraph 40,400 FFFFFF EE82EE}$color
+#${color2}${memgraph 40,400 FFFFFF EE82EE}
+${color2}${membar}
 ${color4}Swap Usage: ${color}$swap/$swapmax$tab[$swapperc%]
 ${color2}${swapbar}$color
 
