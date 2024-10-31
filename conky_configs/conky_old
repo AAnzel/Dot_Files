@@ -55,7 +55,7 @@ ${color4}Uptime: $color$uptime
 ${color4}Kernel: $color$kernel${alignr}${color0}
 ${color4}Entropy: $color${entropy_avail} / ${entropy_poolsize}$alignr[${entropy_perc}%] 
 ${color6}${entropy_bar}
-${color4}Battery:$color$alignr$battery
+${color4}Battery:$color $battery_time $alignr[$battery_percent%]
 ${color2}${battery_bar}
 
 ${color3}MEMORY & SWAP   ${hr 2}$color
