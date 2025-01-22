@@ -58,8 +58,8 @@ rm -rf ~/miniconda3/miniconda.sh
 echo
 echo "================= Installing Miniconda and pip packages ================="
 conda update --all -y
-conda install -y numpy pandas keras scikit-learn gensim
-conda install -y -c conda-forge altair jupyterlab biopython pipreqs plotly
+conda install -y numpy pandas scikit-learn
+conda install -y -c conda-forge jupyterlab pipreqs plotly
 conda update --all -y
 conda clean --all -y
 conda update --all -y

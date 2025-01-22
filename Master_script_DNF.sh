@@ -12,7 +12,7 @@ sudo dnf upgrade --refresh -y
 # 1.0: installing all of the programs
 echo
 echo "================= Installing programs ================="
-sudo dnf install -y vlc qbittorrent gnome-tweaks neofetch conky rclone keepassxc ruby ImageMagick mpv cava btop
+sudo dnf install -y vlc qbittorrent gnome-tweaks fastfetch conky rclone keepassxc ruby ImageMagick btop
 sudo gem install bundler
 flatpak install --noninteractive -y flathub com.viber.Viber com.skype.Client org.signal.Signal com.vscodium.codium 
 
@@ -34,7 +34,7 @@ cp -r neofetch/ alacritty/ conky_configs/ cava/ ~/.config/
 cp conky.desktop ~/.config/autostart/
 
 # Adding .bashrc entry
-echo -e '\n############# Added by Aleksandar ##############\nneofetch\nexport PS1="\[$(tput bold)\]\[\033[38;5;39m\]\u\[$(tput sgr0)\]@\h | \[$(tput bold)\]\d\[$(tput sgr0)\] | \[$(tput bold)\]\t\[$(tput sgr0)\] \$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\n[\w] \\$ \[$(tput sgr0)\]"\n###################################################\n' >> ~/.bashrc
+echo -e '\n############# Added by Aleksandar ##############\nexport PS1="\[$(tput bold)\]\[\033[38;5;39m\]\u\[$(tput sgr0)\]@\h | \[$(tput bold)\]\d\[$(tput sgr0)\] | \[$(tput bold)\]\t\[$(tput sgr0)\] \$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\n[\w] \\$ \[$(tput sgr0)\]"\n###################################################\n' >> ~/.bashrc
 
 
 # 3.0: installing Miniconda and packages
@@ -48,8 +48,8 @@ rm -rf ~/miniconda3/miniconda.sh
 echo
 echo "================= Installing Miniconda and pip packages ================="
 conda update --all -y
-conda install -y numpy pandas keras scikit-learn gensim
-conda install -y -c conda-forge altair jupyterlab biopython pipreqs plotly
+conda install -y numpy pandas scikit-learn
+conda install -y -c conda-forge jupyterlab pipreqs plotly
 conda update --all -y
 conda clean --all -y
 conda update --all -y
