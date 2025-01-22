@@ -13,7 +13,7 @@ sudo apt full-upgrade -y
 # 1.0: installing all of the programs
 echo
 echo "================= Installing programs ================="
-sudo apt install -y vlc qbittorrent fastfetch conky rclone keepassxc ruby-full ruby-devel libyaml-devel imagemagick btop optipng sassc inkscape
+sudo apt install -y vlc qbittorrent fastfetch conky rclone keepassxc ruby-full ruby-devel libyaml-devel imagemagick btop optipng sassc inkscape curl
 sudo gem install bundler
 flatpak install --noninteractive -y flathub com.viber.Viber com.skype.Client org.signal.Signal com.vscodium.codium 
 
@@ -26,6 +26,12 @@ echo \
 
 sudo apt update
 sudo apt install -y docker-ce docker-ce-cli containerd.io
+
+# 1.2: Installing Mullvad
+sudo curl -fsSLo /usr/share/keyrings/mullvad-keyring.asc https://repository.mullvad.net/deb/mullvad-keyring.asc
+echo "deb [signed-by=/usr/share/keyrings/mullvad-keyring.asc arch=$( dpkg --print-architecture )] https://repository.mullvad.net/deb/stable $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/mullvad.list
+sudo apt update
+sudo apt install mullvad-vpn
 
 # 2.0: copying configuration files
 echo
