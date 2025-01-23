@@ -13,7 +13,8 @@ sudo apt full-upgrade -y
 # 1.0: installing all of the programs
 echo
 echo "================= Installing programs ================="
-sudo apt install -y vlc qbittorrent fastfetch conky rclone keepassxc ruby-full ruby-devel libyaml-devel imagemagick btop optipng sassc inkscape curl
+sudo add-apt-repository ppa:zhangsongcui3371/fastfetch
+sudo apt install -y vlc qbittorrent fastfetch conky-all rclone keepassxc ruby-full ruby-devel libyaml-devel imagemagick btop optipng sassc inkscape curl
 sudo gem install bundler
 flatpak install --noninteractive -y flathub com.viber.Viber com.skype.Client org.signal.Signal com.vscodium.codium 
 
