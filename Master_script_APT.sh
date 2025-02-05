@@ -14,7 +14,7 @@ sudo apt full-upgrade -y
 echo
 echo "================= Installing programs ================="
 sudo add-apt-repository ppa:zhangsongcui3371/fastfetch
-sudo apt install -y vlc qbittorrent fastfetch conky-all rclone keepassxc ruby-full ruby-devel libyaml-devel imagemagick btop optipng sassc inkscape curl
+sudo apt install -y vlc qbittorrent fastfetch conky-all rclone keepassxc ruby-full ruby-devel libyaml-devel imagemagick optipng sassc inkscape curl
 sudo gem install bundler
 flatpak install --noninteractive -y flathub com.viber.Viber com.skype.Client org.signal.Signal com.vscodium.codium 
 
@@ -38,7 +38,7 @@ sudo apt install mullvad-vpn
 echo
 echo "================= Copying configuration files ================="
 cp to_do_list.txt ~/Documents/
-cp -r alacritty/ conky_configs/ ~/.config/
+cp -r conky_configs/ ~/.config/
 cp conky.desktop ~/.config/autostart/
 
 # Adding .bashrc entry
@@ -62,17 +62,6 @@ conda update --all -y
 conda clean --all -y
 conda update --all -y
 conda clean --all -y
-#pip install streamlit
-
-# 4.0: changing theme
-#echo
-#echo "================= Changing theme ================="
-#git clone https://github.com/AAnzel/Pop_OS_custom_theme
-#cd Pop_OS_custom_theme/
-#sudo sh pop-color-change.sh
-# sudo sh pop-shell-ext-change.sh
-#cd ../
-#sudo rm -r Pop_OS_custom_theme/
 
 # 4.0: Git config
 echo

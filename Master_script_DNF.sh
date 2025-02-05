@@ -12,7 +12,7 @@ sudo dnf upgrade --refresh -y
 # 1.0: installing all of the programs
 echo
 echo "================= Installing programs ================="
-sudo dnf install -y vlc qbittorrent gnome-tweaks fastfetch conky rclone keepassxc ruby ImageMagick btop
+sudo dnf install -y vlc qbittorrent fastfetch conky rclone keepassxc ruby ImageMagick
 sudo gem install bundler
 flatpak install --noninteractive -y flathub com.viber.Viber com.skype.Client org.signal.Signal com.vscodium.codium 
 
@@ -30,7 +30,7 @@ flatpak install --noninteractive -y flathub com.viber.Viber com.skype.Client org
 echo
 echo "================= Copying configuration files ================="
 cp to_do_list.txt ~/Documents/
-cp -r neofetch/ alacritty/ conky_configs/ cava/ ~/.config/
+cp -r conky_configs/ ~/.config/
 cp conky.desktop ~/.config/autostart/
 
 # Adding .bashrc entry
