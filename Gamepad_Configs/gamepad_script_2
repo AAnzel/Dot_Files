@@ -4,4 +4,4 @@ xboxdrv --wid 1 --next-controller --evdev /dev/input/event20 \
    --deadzone 100% \
    --ui-axismap x2=REL_X:10,y2=REL_Y:10 \
    --evdev-keymap BTN_TRIGGER=a,BTN_THUMB=b,BTN_THUMB2=rb,BTN_TOP=x,BTN_TOP2=y,BTN_PINKIE=lb,BTN_BASE=lt,BTN_BASE2=rt,BTN_BASE3=select,BTN_BASE4=start \
-   --mimic-xpad --silent --dpad-only --triger-as-buttons
+   --mimic-xpad --silent --dpad-only --trigger-as-button
