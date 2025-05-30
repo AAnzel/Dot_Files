@@ -1,7 +1,7 @@
-xboxdrv --wid 1 --next-controller --evdev /dev/input/event20 \
+xboxdrv -i 1 --next-controller --evdev /dev/input/event20 \
    --evdev-absmap ABS_X=x1,ABS_X=dpad_x,ABS_Y=y1,ABS_Y=dpad_y \
    --axismap -Y1=Y1,-Y2=Y2 \
    --deadzone 100% \
    --ui-axismap x2=REL_X:10,y2=REL_Y:10 \
-   --evdev-keymap BTN_TRIGGER=a,BTN_THUMB=b,BTN_THUMB2=rb,BTN_TOP=x,BTN_TOP2=y,BTN_PINKIE=lb,BTN_BASE=lt,BTN_BASE2=rt,BTN_BASE3=select,BTN_BASE4=start \
+   --evdev-keymap BTN_TRIGGER=a,BTN_THUMB=b,BTN_THUMB2=rb,BTN_TOP=x,BTN_TOP2=y,BTN_PINKIE=lb,BTN_BASE=tl,BTN_BASE2=tr,BTN_BASE3=select,BTN_BASE4=start \
    --mimic-xpad --silent --dpad-only --trigger-as-button
