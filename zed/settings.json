@@ -20,10 +20,29 @@
   },
   "wrap_guides": [79, 80, 120],
   "cursor_shape": "block",
+  "current_line_highlight": "all",
+  "show_completions_on_input": true,
+  "show_completion_documentation": true,
+  "auto_signature_help": true,
+  "show_signature_help_after_edits": true,
+  "hover_popover_enabled": true,
+  "hover_popover_delay": 100,
+  "completions": {
+    "words": "fallback",
+    "lsp": true,
+    "lsp_fetch_timeout_ms": 100
+  },
   "languages": {
     "Python": {
-      "language_servers": ["ruff"],
+      "language_servers": ["ruff", "pyright"],
       "format_on_save": "on",
+      "remove_trailing_whitespace_on_save": true,
+      "use_auto_surround": true,
+      "use_autoclose": true,
+      "show_completions_on_input": true,
+      "extend_comment_on_newline": false,
+      "ensure_final_newline_on_save": true,
+      "enable_language_server": true,
       "formatter": [
         {
           "code_actions": {
@@ -40,6 +59,12 @@
     }
   },
   "lsp": {
+    "pyright": {
+      "settings": {
+        // more - https://microsoft.github.io/pyright/#/configuration?id=main-configuration-options
+        "typeCheckingMode": "standard"
+      }
+    },
     "ruff": {
       "initialization_options": {
         "settings": {
